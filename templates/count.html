@@ -1,0 +1,11 @@
+<h1>COUNT</h1>
+<h1>Your text:</h1>
+{{fulltext}}
+<br />
+{%for i,j in result %}
+<b>{{i}}</b> - {{j}}
+<br />
+{% endfor %}
+<form  action="{% url 'home' %}" >
+    <input type="submit"  value="Go back!">
+</form>
